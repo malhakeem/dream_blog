@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- 
+{% block body %} -->
+<!-- 
+<h3>About Me</h3>
+<hr>
+
+<p>
+        This is a test about page
+</p> -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'scss/main.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Poiret+One|Quicksand&display=swap");
+  </style>
+  <title>Resume</title>
+</head>
+
+<body>
+  <main class="resumeCanvas">
+    <div class="gridParent">
+      <div class="titleHeader">
+        <h1>
+          <a class="red1">A</a>
+          <a class="orange2">l</a>
+          <a class="yellow3">h</a>
+          <a class="green4">a</a>
+          <a class="blue5">k</a>
+          <a class="purple6">e</a>
+          <a class="purple6">e</a>
+          <a class="purple6">m</a>
+        </h1>
+      </div>
+      <div class="leftSummary">
+        <div class="bioIntro">
+          <br />
+          <br />
+          <h1>About Me</h1>
+          <p>
+            I am a certified, motivated and result-oriented Data Engineer and Business Intelligence (BI) professional
+            with a master’s degree in computer science specialized in BI and 4 years of working experience. Currently, I
+            am working on creating the next generation of scalable, automated, and streaming data analytics. I am
+            passionate about developing and automating data-driven analyses and generating insights and knowledge based
+            on data mining and data warehousing techniques. Big and complex datasets represent a challenge that
+            constantly motivates me in my work.
+          </p>
+        </div>
+        <div class="Experience">
+          <h1>Experience</h1>
+          <h4><a href="http://www.gk-software.com">GK Software</a> Sep. 2018 - Present</h4>
+          <h5>Data Engineer</h5>
+          <p>
+            Working in the big data research and innovation team on:
+            1. Creating the conceptual, logical, and physical implementations of data warehouses using traditional
+            relational databases and big data technologies
+            2. Implementing a data discovery platform that helps link disparate data in the data lake
+          </p>
+
+          <h4><a href="https://www.tyconz.com">Tyconz - SAP Partners</a> Dec. 2014 - Jul. 2016</h4>
+          <h5>SAP BI Consultant</h5>
+          <p>
+            Implementation of BI reporting in the banking sector using SAP Business Object Suite
+
+          </p>
+          <h4><a href="https://www.sap.com/index.html">SAP</a> Jun. 2014 - Sep. 2014</h4>
+          <h5>SAP BI Trainee</h5>
+          <p>
+            I had the privilege to take part in SAP BI graduate training program where I got trained and certified in
+            SAP Business Intelligence technologies (SAP BW and SAP BO). Also, I attended workshops on communications
+            skills and design thinking.
+          </p>
+          <h4><a href="https://www.linkedin.com/in/malhakeem/">And more...</a></h4>
+
+        </div>
+      </div>
+      <div class="rightInfo">
+        <div class="contacts" style="content: center;">
+          <h1 style="text-align:center;">Contact details</h1>
+          <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <a href="mailto:malhakeem13@gmail.com" class="red1">malhakeem13@gmail.com</a>
+          </p>
+          <p>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a class="orange2">00 49 176 71685502</a>
+          </p>
+          <p>
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/malhakeem" class="yellow3">malhakeem</a>
+          </p>
+          <p>
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <a href="http://alhakeem.me" class="green4">alhakeem.me</a>
+          </p>
+          <p>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/in/malhakeem/" class="blue5">linkedin.com/in/malhakeem</a>
+          </p>
+          <p>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="https://twitter.com/malhakeem13" class="purple6">twitter.com/malhakeem13</a>
+          </p>
+        </div>
+        <div class="skills">
+          <h1 style="text-align:center;">Tech Stack</h1>
+          <p class="red1">Languages: Python / Java / Scala</p>
+
+          <p class="blue5">Data Management: SQL / Spark / Airflow</p>
+          <p class="yellow3">Frameworks: Falcon / Play / Django</p>
+          <p class="green4">Infrastructure: Docker / Google Cloud Platform</p>
+          <p class="orange2">Version Control: Git (Github & Bitbucket)</p>
+        </div>
+        <div class="education">
+          <h1 style="text-align:center;">Education</h1>
+          <p>
+            Master of Science in Computer Science - 2016/2018 (<a href="https://www.tu-berlin.de/menue/home/"
+              class="red1">TUB-Germany</a>, <a href="https://www.ulb.be/" class="blue5">ULB-Belgium</a>, <a
+              href="https://international.univ-tours.fr/english/welcome-international-265902.kjsp"
+              class="green4">UOT-France</a>)
+          </p>
+          <p>
+            Bachelors of Science in Computer Engineering - 2008/2013 (<a href="http://www.uob.edu.bh/en/"
+              class="orange2">UOB-Bahrain</a>)
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+
+<!-- {% endblock body %} -->
+{% endblock content %}

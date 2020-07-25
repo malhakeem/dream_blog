@@ -43,3 +43,6 @@ def email_list_signup(request):
                 subscribe(form.instance.email)
                 form.save()
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+def about(request):
+    return render(request,"about.html")
